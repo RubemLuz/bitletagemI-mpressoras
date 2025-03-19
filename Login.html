@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><H1>Login</H1></header>
+    <section>
+        <label for="loginuser">Login: </label>
+        <input id="loginuser" type="text" placeholder="Seu Login">
+        <label for="senhauser">Login: </label>
+        <input id="senhauser" type="password" placeholder="Sua Senha">
+        <p></p>
+        <button id="logar" type="button" onclick="Logar(document.getElementById('loginuser').value,document.getElementById('senhauser').value)">Entrar</button>
+
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>
