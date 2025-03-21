@@ -10,6 +10,11 @@
     <header>
         <H1>Bilhetagem Impresoras</H1>
         <p></p>
+        <center>
+            <button>Adicionar Impressoras</button>
+            <button>Atualizar Contagem de Paginas</button>
+
+        </center>
         <button id="logoff" type="button" onclick="Deslogar()">Sair</button>
         <br>
 
@@ -27,14 +32,14 @@
             <input id="page" type="number" value="" placeholder="Digite qnt paginas">
             <br>
 
-            <button id="setImp" onclick="AddImp(
+            <button id="setImp" onclick="CreateObj(
             document.getElementById('model').value, 
             document.getElementById('local').value,
             document.getElementById('ip').value,
             document.getElementById('page').value
             )">Enviar</button>
 
-            <button id="showImp" onclick="valuePag()">Mostrar</button>
+            <button id="showImp" onclick="showList()">Mostrar</button>
 
         </div>
     </header>

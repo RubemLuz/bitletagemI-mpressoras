@@ -1,16 +1,19 @@
 body
 {
-    background: grey;
+    background: rgb(27, 27, 27);
 }
 header
 {
     text-align: center;
 }
+
 #listimp
 {
+    background: gray;
     text-align: left;
-    
-    height: 600px;
+    font: italic bold 20px Arial;
+
+    height: 620px;
     width: 1000px;
 }
 
