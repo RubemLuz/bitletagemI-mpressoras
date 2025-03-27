@@ -1,10 +1,6 @@
-body
+#selectd
 {
-    background: rgb(27, 27, 27);
-}
-header
-{
-    text-align: center;
+    background: gray;
 }
 
 #listimp
@@ -21,9 +17,4 @@ header
 {
     float: right;
     margin-right: 10px;
-}
-section
-{
-    text-align: center;
-    margin: auto;
 }

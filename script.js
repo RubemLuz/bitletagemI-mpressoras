@@ -61,6 +61,28 @@ function showList()
     }    
 }
 
+//Manipulação de paginas
+function GoAddImp()
+{
+    window.location.href = "bilhetagem.html"
+}
+
+function GoListImp()
+{
+    window.location.href = "listagem.html"
+}
+
+function GoEditPagImp()
+{
+    window.location.href = "editarpagina.html"
+}
+
+function GoDelImp()
+{
+    window.location.href = "detelar.html"
+}
+
+//Salvamento e Carregamento de dados
 function SaveData()
 {
     localStorage.setItem('impObj', JSON.stringify(impressoras))

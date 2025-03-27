@@ -8,7 +8,7 @@ function Logar(login,senha)
 {
     if(login == userAdmin.Login && senha == userAdmin.Senha)
     {
-        window.location.href = "Bilhetagem.html"
+        window.location.href = "bilhetagem.html"
     }else
     {
         window.alert('O login ou a senha está errada!')
@@ -19,5 +19,5 @@ function Logar(login,senha)
 
 function Deslogar()
 {
-    window.location.href = "Login.html"
+    window.location.href = "index.html"
 }
