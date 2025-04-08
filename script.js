@@ -61,6 +61,29 @@ function showList()
     }    
 }
 
+function allList()
+{
+    let listDiv = document.getElementById("all_list");
+    listDiv.innerHTML = "";
+
+    let initial = document.createElement("p");
+    initial.textContent = " ";
+    listDiv.appendChild(initial);
+    
+    impressoras.forEach(impressoras => 
+    {
+        let p = document.createElement("p")
+        p.textContent = `Marca da Impressora: ${impressoras.Modelo}, Se localiza em: ${impressoras.Local}, IP: ${impressoras.Ip}, Quantidade de Paginas: ${impressoras.Paginas}`
+
+        listDiv.appendChild(p)
+    });
+    console.log('MANO????');
+    let final = document.createElement("p");
+    final.textContent = " ";
+    listDiv.appendChild(final);
+}
+
+
 //Manipulação de paginas
 function GoAddImp()
 {

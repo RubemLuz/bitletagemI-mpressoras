@@ -1,0 +1,18 @@
+body
+{
+    background: rgb(196, 196, 196);
+}
+header
+{
+    text-align: center;
+}
+
+section
+{
+    text-align: center;
+    margin: auto;
+    background: green;
+    border-radius: 45px;
+    width: 600px;
+    height: 600px;
+}
