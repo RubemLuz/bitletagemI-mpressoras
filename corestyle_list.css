@@ -10,9 +10,10 @@ header
 section
 {
     text-align: center;
+    font: normal 20px Helvetica, sans-serif;
     margin: auto;
-    background: green;
+    background: rgb(70, 70, 70);
     border-radius: 45px;
-    width: 600px;
-    height: 600px;
+    width: 1124px;
+    height: 724px;
 }

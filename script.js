@@ -1,4 +1,5 @@
-const listImp = document.getElementById('listimp')
+const listImp = document.getElementById('listimp');
+const classificacao = document.getElementById('sort');
 
 let impressoras = []
 
@@ -70,9 +71,25 @@ function allList()
     initial.textContent = " ";
     listDiv.appendChild(initial);
     
+    switch (classificacao.value) 
+    {
+        case "0":
+            impressoras.sort((a,b) => a.Modelo.localeCompare(b.Modelo))
+            break;
+        case "1":
+            impressoras.sort((a,b) => a.Local.localeCompare(b.Local))
+            break;
+        case "2":
+            impressoras.sort((a,b) => a.Ip.localeCompare(b.Ip))
+            break;
+        case "3":
+            impressoras.sort((a,b) => a.Paginas.localeCompare(b.Paginas))
+            break;
+    }
     impressoras.forEach(impressoras => 
     {
         let p = document.createElement("p")
+        
         p.textContent = `Marca da Impressora: ${impressoras.Modelo}, Se localiza em: ${impressoras.Local}, IP: ${impressoras.Ip}, Quantidade de Paginas: ${impressoras.Paginas}`
 
         listDiv.appendChild(p)
