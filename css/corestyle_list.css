@@ -17,3 +17,10 @@ section
     width: 1124px;
     height: 724px;
 }
+
+#all_listID
+{
+    text-align: left;
+    margin: 10px;
+
+}
