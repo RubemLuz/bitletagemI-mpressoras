@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/corestyle_list.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/corestyle_list.css">
 </head>
 <body>
     <header>
@@ -32,9 +32,15 @@
         </div>
         <p></p>
         <div>
-            <span>Selecione a Impressora por ID:</span>
-            <input id="idSelect" type="numbber" value="" placeholder="Selecione o ID">
-            <button id="idRemove" onclick="removeImp(document.getElementById('idSelect').value)">Remover</button>
+            <span>Selecione a Impressora pelo ID, para editar:</span>
+            <input id="idSelect" type="number" value="" placeholder="Selecione o ID">
+            <p></p>
+            <span>Marca: </span> <input id="modelImp" type="text" value="" placeholder="Modelo"> 
+            <span>Local:</span> <input id="localImp" type="text" value="" placeholder="Local"> 
+            <span>IP:</span> <input id="ipImp" type="text" value="" placeholder="IP">
+            <span>Pagina:</span> <input id="pagImp" type="number" value="" placeholder="Paginas">
+            <p></p>
+            <button id="btnEditar" type="button" onclick="Editar(document.getElementById('idSelect').value)">Editar </button>
         </div>
     </header>
 
@@ -49,7 +55,7 @@
 
     </footer>
 
-    <!-- <script src="scripts/script.js"></script>
-    <script src="scripts/login.js"></script> -->
-</body>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/s_PagEditarPagina.js"></script>
+    <script src="scripts/login.js"></script>
 </html>

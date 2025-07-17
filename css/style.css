@@ -27,3 +27,9 @@
     border-radius: 45px;
     text-align: left;
 }
+
+#removeAll
+{
+    float: right;
+    margin-right: 10px;
+}

@@ -119,6 +119,8 @@ function LoadData()
 
 function Clear()
 {
-    localStorage.clear('impObj')
-    localStorage.removeItem('impObj')
+    const dellAll = confirm("Você deseja deletar todos os dados savos?");
+    if(dellAll == true){ localStorage.clear('impObj'); localStorage.removeItem('impObj'); alert("Todos os dados foram excluídos!"); allListID();}
+
+  
 }
