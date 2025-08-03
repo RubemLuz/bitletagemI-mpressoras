@@ -3,21 +3,28 @@ allListID();
 
 function removeImp(id)
 {
-    if(id != 0 || id == null)
+    if(adminON)
     {
-        const confirmar = confirm(`Você selecionou o ID: ${id}! Deseja realmente deletar?`);
-        if(confirmar == true)
+        if(id != 0 || id == null)
         {
-            impressoras.splice(id-1,1);
-            SaveData();
-            alert(`Impressora ID: ${id} deletada com sucesso!`);
-            allListID();
+            const confirmar = confirm(`Você selecionou o ID: ${id}! Deseja realmente deletar?`);
+            if(confirmar == true)
+            {
+                impressoras.splice(id-1,1);
+                SaveData();
+                alert(`Impressora ID: ${id} deletada com sucesso!`);
+                allListID();
+            }
+            //return alert(`Você selecionou o ID: ${id}, da marca: ${impressoras[id-1].Modelo}, Se localiza em: ${impressoras[id-1].Local}, do IP: ${impressoras[id-1].Ip}, com ${impressoras[id-1].Paginas} paginas.`)
         }
-        //return alert(`Você selecionou o ID: ${id}, da marca: ${impressoras[id-1].Modelo}, Se localiza em: ${impressoras[id-1].Local}, do IP: ${impressoras[id-1].Ip}, com ${impressoras[id-1].Paginas} paginas.`)
-    }
-    else
+        else
+        {
+            return alert("ID inválido");
+        }
+    }else
     {
-        return alert("ID inválido");
+        alert("Você não tem permissão para deletar impressoras!");
+        return;
     }
 }
 

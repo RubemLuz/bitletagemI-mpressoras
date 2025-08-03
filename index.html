@@ -9,12 +9,12 @@
 <body>
     <header><H1>Login</H1></header>
     <section>
-        <label for="loginuser">Login: </label>
-        <input id="loginuser" type="text" placeholder="Seu Login">
-        <label for="senhauser">Login: </label>
-        <input id="senhauser" type="password" placeholder="Sua Senha">
+        <label for="loginUser">Login: </label>
+        <input class="loginInput" id="loginUser" type="text" placeholder="Seu Login">
+        <label for="senhaUser">Login: </label>
+        <input class="loginInput" id="senhaUser" type="password" placeholder="Sua Senha" >
         <p></p>
-        <button id="logar" type="button" onclick="Logar(document.getElementById('loginuser').value,document.getElementById('senhauser').value)">Entrar</button>
+        <button id="logar" type="button" onclick="Logar(document.getElementById('loginUser').value,document.getElementById('senhaUser').value)" >Entrar</button>
         <p></p>
         <button id="cadastrar" type="button" onclick="CreateUser()">Cadastrar</button>
 
